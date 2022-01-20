@@ -1,0 +1,49 @@
+/* Form control custom */
+.form-control--28 {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.2rem + 2px);
+    padding: 0.350rem 0.75rem;
+    font-size: 0.90rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5e6278;
+    background-color: #F5F8FA;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.50rem;
+    transition: color .2s ease, background-color .2s ease;
+    outline: none;
+}
+
+.form-control--28:focus {
+    color: #5e6278;
+    background-color: #EEF3F7;
+    border-color: #f5f8fa;
+    outline: 0;
+}
+
+.form-control--28::placeholder {
+    color: #A1A5B7;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-control--28:disabled,
+.form-control--28[readonly] {
+    background-color: #EEF3F7;
+    opacity: 1;
+}
+
+
+
+select.form-control--28[size],
+select.form-control--28[multiple] {
+    height: auto;
+}
+
+textarea.form-control--28 {
+    height: auto;
+}
+

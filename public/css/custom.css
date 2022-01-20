@@ -1,0 +1,226 @@
+/*
+  Component Search
+*/
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 45px;
+    border-radius: 4rem;
+    background-color: #fff;
+    border-width: 1px;
+    border-color: rgba(120, 144, 156, .15);
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.10) !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+}
+
+.search__button {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #21c8f6;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search__button:hover {
+    background-color: #20b7e0;
+}
+
+.search__input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a1a1aa;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+
+.search__button-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.search-none {
+    display: none;
+}
+
+.search-block {
+    display: block;
+}
+
+/*
+  Component Barcode Book
+*/
+
+.book {
+    position: relative;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(120, 144, 156, .15);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0.934rem;
+    cursor: pointer;
+}
+
+.book:hover .book__button {
+    opacity: 1;
+    transform: translateY(-8px);
+    border-color: #48bdfc;
+
+}
+
+.book:hover .book--locker {
+    visibility: hidden;
+}
+
+.book__button {
+    display: flex;
+    opacity: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-radius: 1.25rem;
+    position: absolute;
+    bottom: -18px;
+    transition-delay: 2s;
+    transition: transform .4s, opacity .2s, border-color 0.2s, background-color 0.2s;
+    transition-timing-function: ease-in-out;
+    border: 1px solid hsla(0, 0%, 100%, .25);
+    will-change: transform;
+
+}
+
+.book__button>span {
+    font-size: 13px;
+    font-weight: 500;
+    /* color: var(--28-gray-500); */
+    margin: 0 auto;
+}
+
+.book__button:hover {
+    background-color: #48bdfc;
+}
+
+.book__button:hover>span {
+    color: #fff;
+}
+
+
+/* Component List Book */
+.listbook {
+    background-color: rgb(245 245 245);
+    border-radius: 0.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+
+.listbook:hover {
+    color: #fff;
+    background-color: var(--28-blue);
+}
+
+/* Component Search List Book */
+.listbook_search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #F5F8FA;
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    transition: background-color .2s ease-in;
+}
+
+
+.listbook_search__input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5e6278;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+    outline: none;
+}
+
+.listbook_search__input:focus .listbook_search {
+    background-color: #EEF3F7;
+}
+
+
+
+
+/*
+    Custom Modifiers CSS
+*/
+
+.no-outline {
+    border: none !important;
+}
+
+.required {
+    font-weight: bold;
+    font-size: 14px;
+    color: red;
+}
+
+.img-rounded-sm {
+    border-radius: 0.5rem;
+}
+
+.no-outline {
+    border: none;
+}
+
+.card-header-custom {
+    border-bottom: 1px solid #eff2f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 2.25rem;
+    background-color: transparent;
+}
+
+.card-title-custom {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient(270deg,#21c8f6,#637bff);
+}
+/* .required:after {
+    content: "*";
+    position: relative;
+    font-size: inherit;
+    color: #f1416c;
+    padding-left: 0.25rem;
+    font-weight: 700;
+} */
